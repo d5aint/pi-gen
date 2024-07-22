@@ -1,0 +1,9 @@
+Index: stage2-cstm/rootfs/etc/issue
+===================================================================
+--- stage2-cstm.orig/rootfs/etc/issue
++++ stage2-cstm/rootfs/etc/issue
+@@ -1,2 +1,3 @@
+ Debian GNU/Linux 12 \n \l
+-
++My IP address: \4{eth0}
++

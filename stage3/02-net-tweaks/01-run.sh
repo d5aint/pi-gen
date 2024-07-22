@@ -1,14 +1,6 @@
 #!/bin/bash -e
 
-sed -i "s/^#NTP=/NTP=us.pool.ntp.org/" "${ROOTFS_DIR}/etc/systemd/timesyncd.conf"
-
-sed -i -Ee 's/^#?[[:blank:]]*PrintLastLog[[:blank:]]*yes[[:blank:]]*$/PrintLastLog no/' \
- "${ROOTFS_DIR}/etc/ssh/sshd_config"
-
-sed -i -e 's/TTYVTDisallocate=no/TTYVTDisallocate=yes/' \
- "${ROOTFS_DIR}/etc/systemd/system/getty@tty1.service.d/noclear.conf"
-
-install -v -d			            		"${ROOTFS_DIR}/etc/wpa_supplicant"
+install -v -d					"${ROOTFS_DIR}/etc/wpa_supplicant"
 install -v -m 600 files/wpa_supplicant.conf	"${ROOTFS_DIR}/etc/wpa_supplicant/"
 
 if [ -v WPA_COUNTRY ]; then

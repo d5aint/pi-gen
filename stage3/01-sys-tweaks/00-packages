@@ -1,6 +1,6 @@
 ssh less fbset sudo psmisc strace ed ncdu
-console-setup keyboard-configuration parted
-bash-completion
+console-setup keyboard-configuration debconf-utils parted
+build-essential manpages-dev bash-completion gdb pkg-config
 python-is-python3
 v4l-utils
 gpiod python3-libgpiod
@@ -9,8 +9,10 @@ pigpio python3-pigpio raspi-gpio python3-rpi.gpio
 python3-spidev
 python3-smbus2
 avahi-daemon
+lua5.1
+luajit
 ca-certificates curl
-nfs-common usbutils
+fake-hwclock nfs-common usbutils
 dosfstools
 dphys-swapfile
 raspberrypi-sys-mods
@@ -26,11 +28,12 @@ man-db
 policykit-1
 ssh-import-id
 ethtool
+ntfs-3g
 pciutils
 rpi-eeprom
 raspi-utils
 udisks2
-unzip zip zstd bzip2
+unzip zip p7zip-full
 file
 kms++-utils
 python3-venv

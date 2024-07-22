@@ -1,0 +1,22 @@
+Index: stage2-cstm/rootfs/etc/ssh/ssh_config
+===================================================================
+--- stage2-cstm.orig/rootfs/etc/ssh/ssh_config
++++ stage2-cstm/rootfs/etc/ssh/ssh_config
+@@ -33,12 +33,16 @@
+ #   AddressFamily any
+ #   ConnectTimeout 0
+ #   StrictHostKeyChecking ask
+-#   IdentityFile ~/.ssh/id_rsa
++    IdentityFile ~/.ssh/id_rsa
+ #   IdentityFile ~/.ssh/id_dsa
+ #   IdentityFile ~/.ssh/id_ecdsa
+ #   IdentityFile ~/.ssh/id_ed25519
+ #   Port 22
++    Ciphers aes128-ctr,aes192-ctr,aes256-ctr
++    HostKeyAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,ssh-dss
++    KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256
++    MACs hmac-sha2-256,hmac-sha2-512,hmac-sha1
+ #   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+ #   MACs hmac-md5,hmac-sha1,umac-64@openssh.com
+ #   EscapeChar ~
+ #   Tunnel no
