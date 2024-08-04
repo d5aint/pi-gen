@@ -1,15 +1,9 @@
 #!/bin/bash -e
 
 install -m 755 files/resize2fs_once	"${ROOTFS_DIR}/etc/init.d/"
-
 install -m 644 files/50raspi		"${ROOTFS_DIR}/etc/apt/apt.conf.d/"
-#install -m 644 files/80basic        "${ROOTFS_DIR}/etc/apt/apt.conf.d/"
-
 install -m 644 files/console-setup  "${ROOTFS_DIR}/etc/default/"
-
 install -m 755 files/rc.local		"${ROOTFS_DIR}/etc/"
-
-install -m 755 files/tft35a.dtbo    "${ROOTFS_DIR}/boot/firmware/overlays/"
 
 if [ -n "${PUBKEY_SSH_FIRST_USER}" ]; then
 	install -v -m 0700 -o 1000 -g 1000 -d "${ROOTFS_DIR}"/home/"${FIRST_USER_NAME}"/.ssh
@@ -25,8 +19,8 @@ fi
 
 on_chroot << EOF
 #systemctl disable hwclock.sh
-systemctl disable nfs-common
-systemctl disable rpcbind
+#systemctl disable nfs-common
+#systemctl disable rpcbind
 if [ "${ENABLE_SSH}" == "1" ]; then
 	systemctl enable ssh
 else
@@ -74,36 +68,4 @@ rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
 sed -i "s/PLACEHOLDER//" "${ROOTFS_DIR}/etc/default/keyboard"
 on_chroot << EOF
 DEBIAN_FRONTEND=noninteractive dpkg-reconfigure keyboard-configuration
-EOF
-
-if [ -f "${ROOTFS_DIR}/etc/update-motd.d/10-uname" ]; then
-    rm "${ROOTFS_DIR}/etc/update-motd.d/10-uname"
-    mkdir "${ROOTFS_DIR}/etc/update-motd-static.d"
-fi
-
-touch "${ROOTFS_DIR}/etc/update-motd.d/20-update"
-chmod 755 "${ROOTFS_DIR}/etc/update-motd.d/20-update"
-
-install -m 755 files/10-welcome "${ROOTFS_DIR}/etc/update-motd.d/"
-install -m 755 files/15-system "${ROOTFS_DIR}/etc/update-motd.d/"
-install -m 755 files/20-update "${ROOTFS_DIR}/etc/update-motd-static.d/"
-
-install -m 644 files/motd-update.timer "${ROOTFS_DIR}/etc/systemd/system/"
-install -m 755 files/motd-update.service "${ROOTFS_DIR}/etc/systemd/system/"
-
-HOME="${ROOTFS_DIR}/home/${FIRST_USER_NAME}"
-install -m 755 -o 1000 -g 1000 files/update.sh "${HOME}/"
-
-on_chroot << EOF
-systemctl enable motd-update.timer
-run-parts /etc/update-motd-static.d
-EOF
-
-on_chroot << EOF
-apt-get -y purge debconf-i18n vim-tiny vim-common
-
-apt-mark manual less psmisc parted usbutils dosfstools rsync 
-
-apt-get -y --purge autoremove
-apt-get clean
 EOF

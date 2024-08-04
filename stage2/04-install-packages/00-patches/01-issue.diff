@@ -1,7 +1,7 @@
-Index: stage2-cstm/rootfs/etc/issue
+Index: stage2/rootfs/etc/issue
 ===================================================================
---- stage2-cstm.orig/rootfs/etc/issue
-+++ stage2-cstm/rootfs/etc/issue
+--- stage2.orig/rootfs/etc/issue
++++ stage2/rootfs/etc/issue
 @@ -1,2 +1,3 @@
  Debian GNU/Linux 12 \n \l
 -

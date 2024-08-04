@@ -4,3 +4,5 @@ linux-image-rpi-v8
 linux-image-rpi-2712
 linux-headers-rpi-v8
 linux-headers-rpi-2712
+firmware-linux-free firmware-misc-nonfree
+firmware-realtek firmware-atheros firmware-brcm80211 firmware-iwlwifi firmware-libertas

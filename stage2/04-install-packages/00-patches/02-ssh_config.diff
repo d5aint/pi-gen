@@ -1,7 +1,7 @@
-Index: stage2-cstm/rootfs/etc/ssh/ssh_config
+Index: stage2/rootfs/etc/ssh/ssh_config
 ===================================================================
---- stage2-cstm.orig/rootfs/etc/ssh/ssh_config
-+++ stage2-cstm/rootfs/etc/ssh/ssh_config
+--- stage2.orig/rootfs/etc/ssh/ssh_config
++++ stage2/rootfs/etc/ssh/ssh_config
 @@ -33,12 +33,16 @@
  #   AddressFamily any
  #   ConnectTimeout 0

@@ -1,5 +1,7 @@
-wpasupplicant wireless-tools firmware-atheros firmware-brcm80211 firmware-libertas firmware-misc-nonfree firmware-realtek
-iw rfkill wireless-regdb
+ethtool
 raspberrypi-net-mods
-network-manager
-net-tools
+#network-manager
+rfkill
+rpi-connect wayvnc
+wireless-tools wireless-regdb
+wpasupplicant

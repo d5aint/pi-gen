@@ -1,36 +1,43 @@
-ssh less fbset sudo psmisc strace ed ncdu
-console-setup keyboard-configuration parted
-bash-completion
-python-is-python3
-v4l-utils
-gpiod python3-libgpiod
-python3-gpiozero
-pigpio python3-pigpio raspi-gpio python3-rpi.gpio
-python3-spidev
-python3-smbus2
+apparmor
 avahi-daemon
-ca-certificates curl
-nfs-common usbutils
-dosfstools
-dphys-swapfile
-raspberrypi-sys-mods
+bzip2
+console-setup keyboard-configuration
+dbus dbus-bin dbus-daemon dbus-system-bus-common
+dphys-swapfile dc
+htop file less lshw patch tree  
+openssh-client
+openssh-server
+openssh-sftp-server
 pi-bluetooth
-apt-listchanges
-usb-modeswitch
-libpam-chksshpwd
-rpi-update
-libmtp-runtime
-rsync
-htop
-man-db
-policykit-1
-ssh-import-id
-ethtool
-pciutils
-rpi-eeprom
-raspi-utils
-udisks2
-unzip zip zstd bzip2
-file
-kms++-utils
-python3-venv
+python3-apt python3-dbus python3-distro-info python3-gi
+python3-toml python3-venv
+ssh ssh-import-id
+unzip zip
+xz-utils zstd
+
+#alsa-topology-conf alsa-ucm-conf
+#anacron
+#apt-listchanges
+#avahi-autoipd
+#bash-completion
+#busybox
+#fbset
+#installation-report
+#libmtp-runtime
+#libpam-chksshpwd
+#libxml2
+#lsb-release
+#man-db
+#nfs-common
+#policykit-1
+#python-is-python3
+#strace ed ncdu
+#ucf
+#udisks2
+#unattended-upgrades
+#usb-modeswitch
+#v4l-utils
+#gpiod python3-libgpiod
+#python3-gpiozero
+#pigpio python3-pigpio python3-rpi.gpio
+#python3-spidev python3-smbus2

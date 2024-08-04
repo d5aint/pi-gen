@@ -2,11 +2,27 @@ Index: stage2/rootfs/etc/inputrc
 ===================================================================
 --- stage2.orig/rootfs/etc/inputrc
 +++ stage2/rootfs/etc/inputrc
-@@ -65,3 +65,7 @@ $endif
+@@ -20,12 +20,12 @@
+ # do not bell on tab-completion
+ # set bell-style none
+ # set bell-style visible
+ 
+ # make autocompletion case insensitive and display suggestions
+-# set completion-ignore-case On
+-# set show-all-if-ambiguous On
++set completion-ignore-case On
++set show-all-if-ambiguous On
+ 
+ # some defaults / modifications for the emacs mode
+ $if mode=emacs
+ 
+ # allow the use of the Home/End keys
+@@ -67,5 +67,8 @@
+ # for freebsd console
+ # "\e[H": beginning-of-line
  # "\e[F": end-of-line
  
  $endif
 +
-+# mappings for up and down arrows search history
-+# "\e[B": history-search-forward
-+# "\e[A": history-search-backward
++"\e[B": history-search-forward
++"\e[A": history-search-backward
