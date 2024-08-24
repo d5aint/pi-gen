@@ -1,43 +1,63 @@
-apparmor
+ssh less fbset sudo psmisc ed ncdu
+console-setup keyboard-configuration debconf-utils parted
+bash-completion gdb
+python-is-python3
 avahi-daemon
-bzip2
-console-setup keyboard-configuration
-dbus dbus-bin dbus-daemon dbus-system-bus-common
-dphys-swapfile dc
-htop file less lshw patch tree  
-openssh-client
-openssh-server
-openssh-sftp-server
+lua5.1
+luajit
+ca-certificates curl
+usbutils
+dosfstools
+dphys-swapfile
+raspberrypi-sys-mods
 pi-bluetooth
-python3-apt python3-dbus python3-distro-info python3-gi
-python3-toml python3-venv
-ssh ssh-import-id
-unzip zip
-xz-utils zstd
+apt-listchanges
+usb-modeswitch
+libpam-chksshpwd
+rpi-update
+libmtp-runtime
+rsync
+htop
+man-db
+policykit-1
+ssh-import-id
+ethtool
+pciutils
+rpi-eeprom
+raspi-utils
+udisks2
+unzip zip p7zip-full
+file
+kms++-utils
+python3-venv
 
-#alsa-topology-conf alsa-ucm-conf
-#anacron
-#apt-listchanges
-#avahi-autoipd
-#bash-completion
-#busybox
-#fbset
-#installation-report
-#libmtp-runtime
-#libpam-chksshpwd
-#libxml2
-#lsb-release
-#man-db
-#nfs-common
-#policykit-1
-#python-is-python3
-#strace ed ncdu
-#ucf
-#udisks2
-#unattended-upgrades
-#usb-modeswitch
-#v4l-utils
-#gpiod python3-libgpiod
-#python3-gpiozero
-#pigpio python3-pigpio python3-rpi.gpio
-#python3-spidev python3-smbus2
+bzip2
+dbus-user-session
+dirmngr
+dns-root-data
+dnsmasq-base
+dos2unix
+exfatprogs
+flashrom
+gnupg
+gnupg-l10n
+gnupg-utils
+gpg
+gpg-agent
+gpg-wks-client
+gpg-wks-server
+gpgconf
+gpgsm
+gpiod
+iso-codes
+keyutils
+ncurses-term
+patch
+pinentry-curses
+polkitd-pkla
+publicsuffix
+python3-toml
+shared-mime-info
+userconf-pi
+xauth
+xz-utils

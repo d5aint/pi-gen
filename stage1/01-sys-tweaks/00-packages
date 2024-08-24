@@ -1,7 +1,10 @@
-raspberrypi-sys-mods
-raspi-gpio libc6
-raspi-utils libfdt1 perl python3 net-tools usbutils device-tree-compiler pastebinit
-raspi-config whiptail parted lua5.1 alsa-utils psmisc
-rpi-eeprom binutils binutils-common libbinutils binutils-aarch64-linux-gnu pciutils python3-pycryptodome flashrom
-rpi-update curl
-sudo
+alsa-topology-conf
+alsa-ucm-conf
+lsb-release
+pastebinit
+python3-distro
+raspi-config
+
+#rpi-eeprom
+#sudo
+#zstd

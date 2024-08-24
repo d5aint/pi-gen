@@ -1,7 +1,8 @@
-ethtool
+network-manager
+net-tools
 raspberrypi-net-mods
-#network-manager
 rfkill
-rpi-connect wayvnc
-wireless-tools wireless-regdb
-wpasupplicant
+wpasupplicant wireless-tools
+
+#ethtool
+#iw rfkill wireless-regdb
