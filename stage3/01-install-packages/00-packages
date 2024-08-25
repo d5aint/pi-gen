@@ -1,39 +1,18 @@
-anacron
+#anacron
 #flent
 fping
 gawk
 git
 htop
-#ifplugd
 iputils-arping
 lshw
 #lynx lynx-common mailcap
 #mc mc-data
 minicom
-ncurses-term
 netperf iperf3
 nmap nmap-common ncat ndiff
-python3-pip
-python3-tk python3-pyxdg
-python3-toml
-python3-venv python3-wheel python3-setuptools
 tcpdump traceroute
 #tftp tftp-hpa tftpd-hpa
 tmux byobu
 tshark wireshark-common
 usb.ids
-
-adwaita-icon-theme at-spi2-common cpp cpp-12
-dbus-user-session dconf-gsettings-backend
-dconf-service fontconfig fontconfig-config
-fonts-urw-base35 gdisk gldriver-test
-gtk-update-icon-cache hicolor-icon-theme
-lightdm lightdm-gtk-greeter mesa-utils 
-mesa-utils-bin mesa-vulkan-drivers obconf 
-openbox pkexec policykit-1 poppler-data
-shared-mime-info udisks2 vulkan-tools x11-common
-x11-utils x11-xkb-utils x11-xserver-utils xauth
-xbitmaps xdg-user-dirs xdg-utils xfonts-encodings
-xfonts-utils xinit xserver-common xserver-xorg-core
-xserver-xorg-input-all xserver-xorg-input-libinput 
-xserver-xorg-video-fbdev xterm
