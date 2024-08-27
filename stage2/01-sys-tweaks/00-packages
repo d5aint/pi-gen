@@ -1,63 +1,25 @@
-ssh less fbset sudo psmisc ed ncdu
-console-setup keyboard-configuration debconf-utils parted
-bash-completion gdb
-python-is-python3
 avahi-daemon
-lua5.1
-luajit
-ca-certificates curl
-usbutils
-dosfstools
+bash-completion
+console-setup keyboard-configuration
 dphys-swapfile
-raspberrypi-sys-mods
-pi-bluetooth
-apt-listchanges
-usb-modeswitch
-libpam-chksshpwd
-rpi-update
-libmtp-runtime
-rsync
-htop
-man-db
-policykit-1
-ssh-import-id
-ethtool
-pciutils
-rpi-eeprom
-raspi-utils
-udisks2
-unzip zip p7zip-full
-file
-kms++-utils
-python3-venv
-
-bzip2
-dbus-user-session
-dirmngr
-dns-root-data
-dnsmasq-base
-dos2unix
 exfatprogs
-flashrom
-gnupg
-gnupg-l10n
-gnupg-utils
-gpg
-gpg-agent
-gpg-wks-client
-gpg-wks-server
-gpgconf
-gpgsm
-gpiod
-iso-codes
-keyutils
-ncurses-term
-patch
-pinentry-curses
-polkitd-pkla
-publicsuffix
-python3-toml
-shared-mime-info
-userconf-pi
-xauth
-xz-utils
+htop
+luajit
+man-db
+ncdu
+nfs-common
+pi-bluetooth
+python-is-python3
+raspberrypi-sys-mods
+raspi-utils
+rpi-eeprom
+rpi-update
+ssh-import-id
+sudo
+task-ssh-server
+usbutils
+unzip zip
+
+#cifs-utils
+#rpicam-apps-lite
+#mkvtoolnix

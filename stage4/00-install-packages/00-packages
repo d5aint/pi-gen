@@ -17,3 +17,11 @@ mesa-utils mesa-utils-bin mesa-vulkan-drivers vulkan-tools
 
 #xserver-xorg-input-all
 #xserver-xorg-video-fbdev
+
+#v4l-utils
+
+#emacsen-common aspell dictionaries-common
+#wamerican | wamerican-small | wamerican-large | wamerican-huge | wamerican-insane
+#task-english
+
+#xauth

@@ -1,8 +1,4 @@
-network-manager
-net-tools
-raspberrypi-net-mods
-rfkill
 wpasupplicant wireless-tools
-
-#ethtool
-#iw rfkill wireless-regdb
+raspberrypi-net-mods
+net-tools
+rfkill

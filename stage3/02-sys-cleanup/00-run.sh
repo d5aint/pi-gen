@@ -3,6 +3,6 @@
 on_chroot << EOF
 #apt-get -y purge 
 
-apt-get -y --purge autoremove
-apt-get clean
+#apt-get -y --purge autoremove
+#apt-get clean
 EOF

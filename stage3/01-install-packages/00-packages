@@ -1,18 +1,18 @@
 #anacron
 #flent
-fping
-gawk
-git
-htop
-iputils-arping
-lshw
+#fping
+#gawk
+#git
+#htop
+#iputils-arping
+#lshw
 #lynx lynx-common mailcap
 #mc mc-data
-minicom
-netperf iperf3
-nmap nmap-common ncat ndiff
-tcpdump traceroute
+#minicom
+#netperf iperf3
+#nmap nmap-common ncat ndiff
+#tcpdump traceroute
 #tftp tftp-hpa tftpd-hpa
-tmux byobu
-tshark wireshark-common
-usb.ids
+#tmux byobu
+#tshark wireshark-common
+#usb.ids
