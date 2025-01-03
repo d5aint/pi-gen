@@ -212,7 +212,6 @@ The following environment variables are supported:
 
     If set, use this directory path as the location of scripts to run when generating images. An absolute or relative path can be given for a location outside the pi-gen directory.
 
-
 A simple example for building Raspberry Pi OS:
 
 ```bash
@@ -424,7 +423,7 @@ work from a Raspberry Pi with a 64-bit capable processor (i.e. Raspberry Pi Zero
 
 ## `binfmt_misc`
 
-Linux is able execute binaries from other architectures, meaning that it should be
+Linux is able to execute binaries from other architectures, meaning that it should be
 possible to make use of `pi-gen` on an x86_64 system, even though it will be running
 ARM binaries. This requires support from the [`binfmt_misc`](https://en.wikipedia.org/wiki/Binfmt_misc)
 kernel module.
